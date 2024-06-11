@@ -1,0 +1,189 @@
+<html>
+  <head>
+     <title> Register Page </title>
+     <style>
+      body, html {
+  height: 100%;
+  margin: 5px;
+}
+.bg {
+ background-image: url(myoff3.jpg);
+ height: 100%; 
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+      body{
+         
+         background-color:aqua;
+         color:orangered;
+         font-style: italic;
+         text-align: center;
+         font-size: medium;
+      }
+      .container {
+            max-width: 500px;
+            margin: 10px auto;
+            background-color:;
+            padding: 9px;
+            background-image: url();
+            background-size: cover;
+            border: 1px solid white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-color: white;
+      }
+      nav {
+            background-color:;
+            color:blue;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            box-shadow: 20px;
+        }
+        nav ul li a {
+            color:blue;
+            text-decoration: none;
+            border-color: ;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        @media screen and (min-width:320px )  {
+
+body {
+     background-color:;
+}
+}
+@media Screen and (min-width:768px) and (max-width:1024px){
+body {
+     background-color: ;
+}
+} 
+
+@media Screen and (min-width:1224px) {
+body {
+     background-color: ;
+}
+}
+@media Screen and (min-width:1824px) {
+body {
+     background-color: rgb(101, 51, 208);
+}
+}             
+        nav{
+            text-align: right;
+            text-shadow: 50px;
+            font-size: medium;
+            background-color: ;
+            color:oldlace;
+        }
+        nav :hover{
+            color:white;
+            background-color: red;
+            text-align: center;
+        }
+        marquee{
+            color:yellow;
+            font-size: xx-large;
+        }
+        h1{
+            font-size: xx-large;
+        }
+     </style>
+
+  </head>
+ <body>
+  <div class="bg">
+    <marquee behavier="scroll" direction="right" >Welcome To User Bookin</marquee>
+   <nav>
+      <ul>
+        <button type="button" class="btn btn-warning"><li><a href="Products.html">Products</a></li></button>
+          <button type="button" class="btn btn-warning"><li><a href="RegPage.html">Bookin</a></li></button>
+            <button type="button" class="btn btn-warning"><li><a href="ContactUs.html">Contact Us</a></li></button>
+      </ul>
+   </nav>
+   <div class="container">
+   <h1 style="color:greenyellow">User Bookin</h1>
+    <form action="PayMent.html">
+      First Name:<input type:"text" name:"First Name" value:"uname" placeholder="enter your first name" required autofocus><br>
+      Last Name:<input type:"text" name:"Last Name" value:"lname" placeholder="enter your last name" required><br>
+      E-mail:
+      <input list="email" name="mymails" required placeholder="E-mail">
+<datalist id="email">
+<option value="mahesh124@gmail.com"></option>
+            <option value="mahesh@yahoo.com"></option>
+            <option value="mahesh@hotmail.com"></option>
+             <option value="mahesh123@gmail.com"></option>
+        </datalist><br>
+    Date::<input type="date" required><br>
+    <script>
+        function validateForm() {
+          const countryDropdown = document.getElementById('country');
+          const selectedCountry = countryDropdown.value;
+    
+          // Check if a country is selected (not the default value)
+          if (selectedCountry === "") {
+            alert("Please select a country.");
+            return false;
+          }
+    
+          return true;
+        }
+      </script>
+    <form action="" id="dropdownForm" onsubmit="return validateForm()">
+        <label for="Electronics"> Select Items:</label>
+        <select id="Electronics" name="car" required>
+          <option value="">Select a Item</option>
+          <option value="Mobiles">Mobiles</option>
+          <option value="LapTops">LapTops</option>
+          <option value="AirCon">AirCon</option>
+          <option value="Cameras">Cameras</option>
+          <option value="Speakers">Spakers</option>
+          <option value="TV">TV</option>
+          <option value="Wash Machine">Wash Mechine</option>
+        </select><br>
+</select>
+Select Color::<select name:Car Colors required>
+  <option>Select Color</option>
+   <option>Red</option>
+   <option>White</option>
+   <option>Pink</option>
+   <option>Orange</option>
+   <option>Black</option>
+   <option>Green</option>
+   <option>Blue</option>
+</select><br>
+Select Location::<select name:Location required>
+  <option>Select Location</option>
+   <option>Anakapalli</option>
+   <option> Srikakulam</option>
+   <option>Paderu</option>
+   <option>Palnadu</option>
+   <option>Prakasam</option>
+   <option>Bapatla</option>
+   <option>Nellore</option>
+   <option>Nandyal</option>
+   <option>Guntur</option>
+   <option>Vijayawada</option>
+</select><br>
+
+    Purchage : <input type="number" name ="dozens" min="0" max="5" step="1" value="1">Number Of items <br>
+    Cost-Range : <input type="number" name ="dozens" min="10,000" max="20,00000" step="5000" value="5000">Thousand Rupees <br>
+    <input type="submit" value="submit">
+     <input type="Reset" value="Reset">
+</form>
+</form>
+</body>
+</div>
+</div>
+</html>

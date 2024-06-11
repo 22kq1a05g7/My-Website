@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <style>
+        body, html {
+  height: 60%;
+  margin: 0;
+}
+.bg {
+  background-image: url(gam.jpg); <!--sample-->
+  height: 60%; 
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        nav {
+            background-color:;
+            color:blue;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: blue;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        nav :hover{
+         color:red;
+         background-color:yellow;
+         text-align: center;
+        }
+        .container {
+            max-width: 300px;
+            margin: 2px auto;
+            background-color:;
+            padding: 24px;
+            background-image: url(.jpg);<!--g-->
+            background-size: cover;
+            background-position: 50%;
+            border: 1px solid white;
+            border-radius: 8px;
+            box-shadow: white;
+            margin-left: 100px;
+            
+            
+        }
+        input[type=text], input[type=password] {
+            width: 90%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+            display: inline-block;
+            border: wheat;
+            
+        }
+        button {
+            background-color:purple;
+            color: white;
+            padding: 10px 20px;
+            margin: 2px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .container input[type="submit"]:hover {
+            background-color: blue;
+        }
+        h2 {
+            text-align: center;
+            font-size: xx-large;
+        }
+        marquee{
+            color:yellow;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="bg">
+        
+            <marquee behavier="scroll" direction="left" >Welcome to Cosumer Electronics Stores</marquee>
+            
+           <nav>
+              <ul>
+                <img src="logo.jpg" alt="" width="100px" height="50px">
+                 <li><a href="AboutUs.html">About</a></li>
+                 <li><a href="Products.html">Products</a></li>
+                 <li><a href="Account.html">Account</a></li>
+                 <li><a href="LoginPage.html">Login</a></li>
+                 <li><a href="Bookin.html">Bookin</a></li>
+                 <li><a href="ContactUs.html">Contact Us</a></li>
+              </ul>
+           </nav>
+           <div class="container">
+        <h2 style="color:greenyellow">WelCome!</h2>
+        <form action="LoginPage.html">
+            <label for="name"><b>User Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required autofocus>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <label for="number"><b>Mobile No</b></label>
+            <input type="tel"  name="personal" id="per1" pattern="[0-9]{10}" title=""the ten digits number required placeholder="Mobile No"><br>
+
+            <button type="submit">Create Account</button>
+            <button>Reset</button>
+        </form>
+    </div>
+    </div>
+        </div>
+</body>
+</html>

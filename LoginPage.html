@@ -1,0 +1,149 @@
+<html>
+   <head>
+      <title> login page </title>
+      <style>
+        .logo{
+            height: 20%;
+            width: 20%;
+        }
+        body, html {
+  height: 100%;
+  margin: 8px;
+}
+
+.bg {
+  /* The image used */
+  background-image: url(low.jpg);<!--sam1-->
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+         body{
+            background-color: blue;
+            color:hotpink;
+            text-align: center;
+            font-style: italic;
+         }
+         nav {
+            background-color:;
+            color:wheat;
+            padding: 10px;
+            text-align: left;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: ;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        nav :hover{
+         color:red;
+         background-color: white;
+        }
+        .login-container {
+            max-width: 300px;
+            margin: 50px auto;
+            background-image:url(.jpg);
+            padding: 20px;
+            border: 1px solid yellow;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid yellow;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: greenyellow;
+            color: white;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: peru;
+        }
+        @media screen and (min-width:320px )  {
+
+body {
+     background-color:;
+}
+}
+@media Screen and (min-width:768px) and (max-width:1024px){
+body {
+     background-color: ;
+}
+} 
+
+@media Screen and (min-width:1224px) {
+body {
+     background-color: ;
+}
+}
+@media Screen and (min-width:1824px) {
+body {
+     background-color: ;
+}
+} 
+marquee{
+    color:yellow;
+    font-size: xx-large;
+} 
+      </style>
+  </head>
+<body>
+    <marquee behavier="scroll" direction="left" ></marquee>
+    <div class="bg">
+   <nav style="color:azure">
+      <ul>
+        <img src="logo.jpg" alt="" width="100px" height="50px">
+        <li><a href="LoginPage.html">Login</a></li>
+         <li><a href="Products.html">Products</a></li>
+        <li><a href="Bookin.html">Bookin</a></li>
+      </ul>
+   </nav>
+   
+   <marquee behavier="scroll" direction="right" >Welcome to Login Page</marquee>
+   <div class="login-container">
+  <h1 style="color:red">Login Page</h1>
+   <form action="Products.html">
+      username:<input type="text" name="username" placeholder="username" required autofocus><br>
+      <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+      <input type="submit" value="submit">
+      <input type="Reset" value="Reset">
+      <button>Next</button>
+</form>
+<p Don't have an account?> <a href="Account.html"><mark>Create Account</mark></a></p>
+</body>
+</div>
+</div>
+</html>
