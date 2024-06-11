@@ -1,0 +1,81 @@
+<html>
+<head>
+  <title>Payment Page</title>
+  <style>
+    body, html {
+  height: 100%;
+  margin: 5px;
+}
+.bg {
+ background-image: url(pay.jpg);
+ height: 100%; 
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    .container {
+            max-width: 100px;
+            margin: 5px auto;
+            background-color:;
+            padding: 9px;
+            background-image: url();
+            background-size: cover;
+            border: 1px solid white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-color: white;
+      }
+      h1{
+        text-align: center;
+      }
+      body{
+        color:red;
+      }
+      marquee{
+        color:orangered;
+        font-size: x-large;
+      }
+  </style>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@stripe/stripe-js"></script>
+</head>
+<body style="background-color: yellow";>
+  <div class="bg">
+    <marquee behavier="scroll" direction="right" >Welcome To Online Payment</marquee>
+    <div class="container">
+  <div class="container mt-5">
+    <h1 style="color:blue">Payment Page</h1>
+    <form action="PayMentSussecc.html">
+      <div>
+        <label for="card-number">Card Number</label>
+        <input type="text" class="form-control" id="card-number" placeholder="Enter card number" required>
+      </div>
+      <div class="form-row">
+        <div class="col">
+          <label for="expiry-date">Expiry Date</label>
+          <input type="text" class="form-control" id="expiry-date" placeholder="DD/MM/YY" required>
+        </div>
+        </div>
+      <div class="form-group mt-4">
+        <label for="name">Cardholder Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter cardholder name" required>
+      </div>
+      <button type="submit" class="btn btn-primary mt-3">Submit Payment</button>
+    </form>
+  </div>
+  <!-- Bootstrap JS and Stripe integration script -->
+  <!-- Your Stripe publishable key -->
+  <script>
+    const stripe = Stripe('YOUR_STRIPE_PUBLISHABLE_KEY');
+    const elements = stripe.elements();
+    const cardElement = elements.create('card');
+    cardElement.mount('#card-element');
+  </script>
+</body>
+</div>
+</div>
+</html>
+
